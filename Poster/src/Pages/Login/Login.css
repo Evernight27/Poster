@@ -1,0 +1,83 @@
+.loginHead {
+  font-size: 35px;
+  text-align: center;
+  padding: 60px;
+  background-image: url('../../assets/sparklySky.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.loginTitleBlock {
+  border: 7px solid transparent;
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 295px;
+  height: 75px;
+  padding: 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-image: linear-gradient(to right, #f8049c, #ff7600) 1;
+  border-image-slice: 100%;
+  animation: border-animation 4s linear infinite;
+}
+
+.loginTitleWords {
+  position: relative;
+  bottom: 40px;
+  right: 57px;
+  width: 290px;
+  height: 45px;
+  padding: 25px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, #f8049c, #ff7600);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation 4s linear infinite;
+}
+
+.loginInput {
+  display: flex;
+  text-align: center;
+  max-width: 50%;
+  min-width: 50%;
+  justify-content: center;
+  margin: auto;
+  width: 350px;
+  height: 45px;
+  border-radius: 20px;
+  margin: 0px 10px 0px 10px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+
+/* Animated border */
+@keyframes border-animation {
+  0% {
+    border-image: linear-gradient(to right, #f8049c, #ff7600) 1;
+  }
+
+  50% {
+    border-image: linear-gradient(to right, #00d2ff, #3a7bd5) 1;
+  }
+
+  100% {
+    border-image: linear-gradient(to right, #f8049c, #ff7600) 1;
+  }
+}
+
+/* text-animation */
+@keyframes text-animation {
+  0% {
+    background-image: linear-gradient(to right, #f8049c, #ff7600);
+  }
+
+  50% {
+    background-image: linear-gradient(to right, #00d2ff, #3a7bd5);
+  }
+
+  100% {
+    background-image: linear-gradient(to right, #f8049c, #ff7600);
+  }
+}
